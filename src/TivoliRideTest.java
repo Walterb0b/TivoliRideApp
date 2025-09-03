@@ -49,5 +49,6 @@ public class TivoliRideTest {
         else{
             System.out.println("You are not tall enough for the " + selectedRide.getRideName() + "!" + " Next time bring some stilts maybe? :P");
         }
+        input.close();
     }
 }
