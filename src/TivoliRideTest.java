@@ -9,6 +9,10 @@ public class TivoliRideTest {
         //Create height
         TivoliRide t1 = new TivoliRide(height);
 
+        System.out.println(t1.getDescription());
+
+
+
 
 
     }
