@@ -7,7 +7,7 @@ public class TivoliRide {
     }
 
     //Method to describe if the person is tall enough
-    public double getDescription(){
+    public String getDescription(){
 
     }
 }
