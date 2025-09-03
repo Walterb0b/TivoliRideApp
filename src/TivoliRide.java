@@ -1,24 +1,28 @@
 public class TivoliRide {
-    private double height;
+    private double minHeight;
+    private String rideName;
 
     //Constructor for tivoli ride
-    public TivoliRide(double height){
-        this.height = height;
+    public TivoliRide(String rideName, double minHeight) {
+        this.minHeight = minHeight;
+        this.rideName = rideName;
     }
 
-    //Method to describe if the person is tall enough
-    public String getDescription(){
-        if(height < 1.60){
-            return "You are " + height + "m" + " tall..." +
-                    "You are not tall enough! Next time bring some stilts maybe? :P";
-        }
-        else if(height == 1.60){
-            return "You are " + height + "m" + " tall." +
-                    "You are just tall enough :D\nJump on in!";
-        }
-        else{
-            return "You are " + height + "m" + " tall!" +
-                    "\n You are more than tall enough for this ride. Welcome aboard!";
-        }
+    //Method to get the minimum height required for the ride
+    public double getMinHeight() {
+        return minHeight;
+    }
+
+    //Method to get the name of the ride
+    public String getRideName() {
+        return rideName;
+    }
+
+    public boolean canRide(double height){
+        return height > minHeight;
+    }
+
+    public boolean canJustRide(double reqHeight){
+        return reqHeight == minHeight;
     }
 }
