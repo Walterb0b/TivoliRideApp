@@ -9,10 +9,14 @@ public class TivoliRide {
     //Method to describe if the person is tall enough
     public String getDescription(){
         if(height < 1.60){
-            return "You are not tall enough";
+            return "You are not tall enough! Next time bring some stilts maybe? :P";
         }
-        else {
-            return "You are tall enough";
+        else if(height == 1.60){
+            return "You are just tall enough :D\nJump on in!";
+        }
+        else{
+            return "You are " + height + "cm" + " tall!" +
+                    "\n You are more than tall enough for this ride. Welcome aboard!";
         }
     }
 }
