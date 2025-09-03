@@ -41,13 +41,13 @@ public class TivoliRideTest {
         //Check if the user is tall enough to go on the ride
         TivoliRide selectedRide = rides[choice - 1];
         if(selectedRide.canRide(height)){
-            System.out.println("\n You are more than tall enough for this ride. Welcome aboard the " + selectedRide.getRideName() + "!");
+            System.out.println("\n You are more than tall enough for this ride. Welcome aboard  " + selectedRide.getRideName() + "!");
         }
         else if(selectedRide.canJustRide(height)){
-            System.out.println("You are just tall enough :D\nJump on in!");
+            System.out.println("You are just tall enough for " + selectedRide.getRideName() + ":D" + "\nJump on in!");
         }
         else{
-            System.out.println("You are not tall enough for the " + selectedRide.getRideName() + "!" + " Next time bring some stilts maybe? :P");
+            System.out.println("You are not tall enough for " + selectedRide.getRideName() + "!" + " Next time bring some stilts maybe? :P");
         }
         input.close();
     }
