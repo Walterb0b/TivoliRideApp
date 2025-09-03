@@ -17,11 +17,11 @@ public class TivoliRide {
     public String getRideName() {
         return rideName;
     }
-
+    //Method to see if the user is tall enough
     public boolean canRide(double height){
         return height > minHeight;
     }
-
+    //Method to see if the user is JUST tall enough
     public boolean canJustRide(double reqHeight){
         return reqHeight == minHeight;
     }
