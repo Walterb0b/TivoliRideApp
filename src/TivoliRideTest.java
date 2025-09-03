@@ -12,8 +12,5 @@ public class TivoliRideTest {
         System.out.println(t1.getDescription());
 
 
-
-
-
     }
 }

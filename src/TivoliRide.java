@@ -2,7 +2,7 @@ public class TivoliRide {
     private double height;
 
     //Constructor for tivoli ride
-    public tivoliRide(double height){
+    public TivoliRide(double height){
         this.height = height;
     }
 
