@@ -22,6 +22,7 @@ public class TivoliRideTest {
         System.out.println("What ride would you like to go on today?");
         System.out.println("Available rides:");
 
+        //Print the rides available, using our array.
         for (int i = 0; i < rides.length; i++) {
             System.out.println((i + 1) + ". " + rides[i].getRideName() + " (Minimum height required for this ride): " + rides[i].getMinHeight() + "m");
         }

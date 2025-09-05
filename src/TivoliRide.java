@@ -22,7 +22,7 @@ public class TivoliRide {
         return height > minHeight;
     }
     //Method to see if the user is JUST tall enough
-    public boolean canJustRide(double reqHeight){
-        return reqHeight == minHeight;
+    public boolean canJustRide(double height){
+        return height == minHeight;
     }
 }
